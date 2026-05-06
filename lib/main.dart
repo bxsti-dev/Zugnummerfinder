@@ -1,4 +1,7 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart' show rootBundle;
 
 void main() {
   runApp(const MyApp());
@@ -25,9 +28,18 @@ class Home extends StatefulWidget {
   State<Home> createState() => _HomeState();
 }
 class _HomeState extends State<Home> {
-  //Variables, functions
+  Map data = {};
+
+  loadData()async{ //Future<void> loadData() async {}
+    data = json.decode(await rootBundle.loadString("assets/traindata.json"));
+  }
 
 
+  @override
+  void initState() {
+    loadData();
+    super.initState();
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(

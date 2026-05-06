@@ -4,7 +4,6 @@
         "max": 2501,
         "year_built": "1973-1975",
         "retired": 2006,
-        "manufacturer": ["ABB Henschel", "Adtranz", "AEG, Siemens", "WaggonUnion", "O&K"],
         "type": "Schaltwerker"
     },
     "F74.1 / F74.1E": {
@@ -12,7 +11,6 @@
         "max": 2529,
         "year_built": "1973-1975",
         "retired": null,
-        "manufacturer": ["ABB Henschel", "Adtranz", "AEG, Siemens", "WaggonUnion", "O&K"],
         "type": "Schaltwerker"
     },
     "F74.2 / F74.2E": {
@@ -20,7 +18,6 @@
         "max": 2549,
         "year_built": "1973-1975",
         "retired": null,
-        "manufacturer": ["ABB Henschel", "Adtranz", "AEG, Siemens", "WaggonUnion", "O&K"],
         "type": "Schaltwerker"
     },
     "F74.3 / F74.3E": {
@@ -28,7 +25,6 @@
         "max": 2555,
         "year_built": "1973-1975",
         "retired": null,
-        "manufacturer": ["ABB Henschel", "Adtranz", "AEG, Siemens", "WaggonUnion", "O&K"],
         "type": "Schaltwerker"
     },
     "F76 / F76E": {
@@ -36,7 +32,6 @@
         "max": 2637,
         "year_built": "1976-1977",
         "retired": null,
-        "manufacturer": ["ABB Henschel", "Adtranz", "AEG, Siemens", "WaggonUnion", "O&K"],
         "type": "Schaltwerker"
     },
     "F79.1": {
@@ -44,7 +39,6 @@
         "max": 2671,
         "year_built": "1979-1981",
         "retired": 2019,
-        "manufacturer": ["ABB Henschel", "Adtranz", "AEG, Siemens", "WaggonUnion", "O&K"],
         "type": "Schaltwerker"
     },
     "F79.2": {
@@ -52,7 +46,6 @@
         "max": 2711,
         "year_built": "1979-1981",
         "retired": 2021,
-        "manufacturer": ["ABB Henschel", "Adtranz", "AEG, Siemens", "WaggonUnion", "O&K"],
         "type": "Schaltwerker"
     },
     "F79.3": {
@@ -60,7 +53,6 @@
         "max": 2723,
         "year_built": "1979-1981",
         "retired": 2004,
-        "manufacturer": ["ABB Henschel", "Adtranz", "AEG, Siemens", "WaggonUnion", "O&K"],
         "type": "Drehstromer"
     },
     "F84": {
@@ -68,7 +60,6 @@
         "max": 2801,
         "year_built": "1984-1985",
         "retired": null,
-        "manufacturer": ["ABB Henschel", "Adtranz", "AEG, Siemens", "WaggonUnion", "O&K"],
         "type": "Drehstromer"
     },
     "F87": {
@@ -76,7 +67,6 @@
         "max": 2843,
         "year_built": "1987-1988",
         "retired": null,
-        "manufacturer": ["ABB Henschel", "Adtranz", "AEG, Siemens", "WaggonUnion", "O&K"],
         "type": "Drehstromer"
     },
     "F90": {
@@ -84,7 +74,6 @@
         "max": 2903,
         "year_built": "1990-1991",
         "retired": null,
-        "manufacturer": ["ABB Henschel", "Adtranz", "AEG, Siemens", "WaggonUnion", "O&K"],
         "type": "Drehstromer"
     },
     "F92": {
@@ -92,7 +81,6 @@
         "max": 3013,
         "year_built": "1992-1994",
         "retired": null,
-        "manufacturer": ["ABB Henschel", "Adtranz", "AEG, Siemens", "WaggonUnion", "O&K"],
         "type": "Drehstromer"
     },
     "H95": {
@@ -100,7 +88,6 @@
         "max": 5002,
         "year_built": "1994-1995",
         "retired": null,
-        "manufacturer": ["ABB Henschel", "Adtranz", "Bombardier"],
         "type": null
     },
     "H97": {
@@ -108,7 +95,6 @@
         "max": 5026,
         "year_built": "1998-1999",
         "retired": null,
-        "manufacturer": ["ABB Henschel", "Adtranz", "Bombardier"],
         "type": null
     },
     "H01": {
@@ -116,7 +102,6 @@
         "max": 5046,
         "year_built": "2000-2002",
         "retired": null,
-        "manufacturer": ["ABB Henschel", "Adtranz", "Bombardier"],
         "type": null
     },
     "IK17": {
@@ -124,7 +109,6 @@
         "max": 1037,
         "year_built": "2016-2017",
         "retired": null,
-        "manufacturer": ["Stadler"],
         "type": null
     },
     "IK20": {
@@ -132,11 +116,15 @@
         "max": 5078,
         "year_built": "2020-2021",
         "retired": null,
-        "manufacturer": ["Stadler"],
         "type": null
     },
-
-
+    "J24": {
+        "min": 7001,
+        "max": 7533,
+        "year_built": "2023",
+        "retired": null,
+        "type": null
+    },
 
 
 
@@ -149,7 +137,6 @@
         "max": 537,
         "year_built": "2002-2005",
         "retired": null,
-        "manufacturer": ["ABB Henschel", "AEG", "DWM", "O&K", "Siemens", "WaggonUnion"],
         "type": null
     },
     "A3L66": {
@@ -157,7 +144,6 @@
         "max": 891,
         "year_built": "1966",
         "retired": 1999,
-        "manufacturer": ["ABB Henschel", "AEG", "O&K", "Siemens", "WaggonUnion"],
         "type": null
     },
     "A3L67": {
@@ -165,7 +151,6 @@
         "max": 883,
         "year_built": "1967-1968",
         "retired": 2008,
-        "manufacturer": ["ABB Henschel", "AEG", "O&K", "Siemens", "WaggonUnion"],
         "type": null
     },
     "A3L71": {
@@ -173,7 +158,6 @@
         "max": 793,
         "year_built": "1972-1973",
         "retired": 2022,
-        "manufacturer": ["ABB Henschel", "AEG", "O&K", "Siemens", "WaggonUnion"],
         "type": null
     },
     "A3L82": {
@@ -181,7 +165,6 @@
         "max": 655,
         "year_built": "1982-1983",
         "retired": 2018,
-        "manufacturer": ["ABB Henschel", "AEG", "O&K", "Siemens", "WaggonUnion"],
         "type": null
     },
     "A3L92": {
@@ -189,47 +172,13 @@
         "max": 639,
         "year_built": "1993-1995",
         "retired": null,
-        "manufacturer": ["ABB Henschel", "AEG", "O&K", "Siemens", "WaggonUnion"],
         "type": "Drehstromer"
     },
-    "G": {
-        "min": null,
-        "max": null,
-        "year_built": "",
-        "retired": null,
-        "manufacturer": [],
-        "type": null
-    },
-    "GI": {
-        "min": null,
-        "max": null,
-        "year_built": "",
-        "retired": null,
-        "manufacturer": [],
-        "type": null
-    },
-    "GII": {
-        "min": null,
-        "max": null,
-        "year_built": "",
-        "retired": null,
-        "manufacturer": [],
-        "type": null
-    },
-    "GI/1": {
-        "min": null,
-        "max": null,
-        "year_built": "",
-        "retired": null,
-        "manufacturer": [],
-        "type": null
-    },
     "GI/1E": {
-        "min": null,
-        "max": null,
-        "year_built": "",
+        "min": 1070,
+        "max": 1094,
+        "year_built": "2005-2009",
         "retired": null,
-        "manufacturer": [],
         "type": null
     },
     "HK00": {
@@ -237,7 +186,6 @@
         "max": 1004,
         "year_built": "2001",
         "retired": null,
-        "manufacturer": ["Adtranz","Bombardier"],
         "type": null
     },
     "HK06": {
@@ -245,7 +193,6 @@
         "max": 1024,
         "year_built": "2006-2007",
         "retired": null,
-        "manufacturer": ["Adtranz","Bombardier"],
         "type": null
     },
     "IK15": {
@@ -253,7 +200,6 @@
         "max": 1026,
         "year_built": "2015",
         "retired": null,
-        "manufacturer": ["Stadler"],
         "type": null
     },
     "IK18": {
@@ -261,7 +207,13 @@
         "max": 1064,
         "year_built": "2018-2019",
         "retired": null,
-        "manufacturer": ["Stadler"],
+        "type": null
+    },
+    "JK24": {
+        "min": 6001,
+        "max": 6517,
+        "year_built": "2023-2025",
+        "retired": null,
         "type": null
     }
 }
