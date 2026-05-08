@@ -1,5 +1,4 @@
 import 'dart:convert';
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
 
@@ -16,6 +15,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           useMaterial3: true,
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.yellow, brightness: Brightness.dark),
+          //textTheme: TextTheme(bodyMedium: TextStyle(color: Colors.yellow.shade100))
         ),
       debugShowCheckedModeBanner: false,
     );
@@ -29,11 +29,77 @@ class Home extends StatefulWidget {
 }
 class _HomeState extends State<Home> {
   Map data = {};
+  bool hasResult = false;
+  String? name;
+  int? minNumber;
+  int? maxNumber;
+  String? yearBuilt;
+  int? retired;
+  String? type;
 
   loadData()async{ //Future<void> loadData() async {}
     data = json.decode(await rootBundle.loadString("assets/traindata.json"));
   }
 
+  setData(int i){
+    setState(() {
+      hasResult = true;
+      name = data.keys.elementAt(i);
+      minNumber = data.values.elementAt(i)["min"];
+      maxNumber = data.values.elementAt(i)["max"];
+      yearBuilt = data.values.elementAt(i)["year_built"];
+      retired = data.values.elementAt(i)["retired"];
+      type = data.values.elementAt(i)["type"];
+    });
+  }
+
+  searchData(value, bool number){
+    for(int i = 0;i<data.keys.length;i++){
+
+      if(number == true){
+        if(value >= data.values.elementAt(i)["min"] && value <= data.values.elementAt(i)["max"]){
+          setData(i);
+          break;
+        }else{
+          if(i == data.keys.length-1){
+            setState(() {
+              hasResult = false;
+            });
+          }
+        }
+      }
+
+      if(number == false){
+        if(value == data.keys.elementAt(i)){
+          setData(i);
+          break;
+        }else{
+          if(i == data.keys.length-1){
+            setState(() {
+              hasResult = false;
+            });
+          }
+        }
+      }
+
+    }
+  }
+
+  searchbarUpdate(String value){
+    if(value != "" && value.length >= 3){
+
+      if(int.tryParse(value) != null){ // only number
+        searchData(int.parse(value), true);
+      }else{                           // with letters
+        searchData(value.trim().toUpperCase(), false);
+      }
+
+    }else{
+      setState(() {
+        hasResult = false;
+      });
+    }
+  }
 
   @override
   void initState() {
@@ -43,35 +109,71 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(title: Text("Zugnummerfinder"), centerTitle: true),
 
       body: Center(
         child: Column(
           children: [
 
+            /// SEARCHBAR ///
             Align(
               alignment: AlignmentGeometry.topCenter,
               child: Padding(padding: const EdgeInsets.all(24.0),
                 child: SearchBar(
-                  hintText: "Search for trainnumber...",
-                  //leading: Icon(Icons.manage_search),
+                  hintText: "Search trainnumber/trainname...",
+                  leading: Icon(Icons.search),
                   padding: WidgetStatePropertyAll(EdgeInsetsGeometry.only(left: 12, right: 12)),
-                  trailing: [IconButton.filledTonal(onPressed: (){}, icon: Icon(Icons.search))],
+                  onChanged: (value) {
+                    searchbarUpdate(value);
+                  },
                 ),
               )
             ),
 
-            Expanded(
+             
+            /// RESULT WIDGET ///
+            hasResult ? Padding(
+              padding: const EdgeInsets.only(left: 50, right: 50, top: 20, bottom: 20),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                spacing: 8,
+                children: [
+                  Text("$name",                     style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold)),
+                  Text("($minNumber - $maxNumber)", style: TextStyle(fontSize: 20, fontWeight: FontWeight.normal)),
+                  Padding(padding: EdgeInsetsGeometry.all(20)),
+
+                  Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,children: [
+                    Text("Year built:", style: TextStyle(fontWeight: FontWeight.bold)),
+                    Text("$yearBuilt")
+                  ]),
+              
+                  Divider(),
+              
+                  Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,children: [
+                    Text("Retired:", style: TextStyle(fontWeight: FontWeight.bold)),
+                    retired == null ? Text("No") : Text("$retired")
+                  ]),
+
+                  type != null ? Divider():Container(),
+              
+                  type != null ? Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,children: [
+                    Text("Type:", style: TextStyle(fontWeight: FontWeight.bold)),
+                    Text("$type")
+                  ]):Container(),
+                ]
+              ),
+            )
+            
+            
+            /// NOT SEARCHED PLACEHOLDER ///
+            : Expanded(
               child: Center(
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   spacing: 8,
                   children: [
-                    Icon(
-                      Icons.train,
-                      size: 100,
-                      color: ColorScheme.of(context).primary,
-                    ),
-                    Text("No train searched", style: TextStyle(fontSize: 20))
+                    Icon(Icons.train, size: 100, color: ColorScheme.of(context).primary),
+                    Text("Search for trains", style: TextStyle(fontSize: 20))
                   ],
                 )
               ),
