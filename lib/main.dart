@@ -28,6 +28,7 @@ class Home extends StatefulWidget {
   State<Home> createState() => _HomeState();
 }
 class _HomeState extends State<Home> {
+  final searchbarController = TextEditingController();
   Map data = {};
   bool hasResult = false;
   String? name;
@@ -120,12 +121,23 @@ class _HomeState extends State<Home> {
               alignment: AlignmentGeometry.topCenter,
               child: Padding(padding: const EdgeInsets.all(24.0),
                 child: SearchBar(
+                  controller: searchbarController,
                   hintText: "Search trainnumber/trainname...",
                   leading: Icon(Icons.search),
                   padding: WidgetStatePropertyAll(EdgeInsetsGeometry.only(left: 12, right: 12)),
                   onChanged: (value) {
                     searchbarUpdate(value);
                   },
+                  trailing: [
+                    if(searchbarController.text.isNotEmpty)
+                      IconButton(
+                        icon: Icon(Icons.clear),
+                        onPressed: (){
+                          searchbarController.text = "";
+                          searchbarUpdate("");
+                        }
+                      ),
+                  ],
                 ),
               )
             ),
