@@ -1,7 +1,10 @@
-Flutter Zugnummerfinder app.
+App for searching bvg trains by number or name. 
 
 TODO:
-- Bottomnavigationbar Tabs mit weiterem Tab zum speichern wann man welche zugnummer gesehen hat (loggen). (ListTile)
-- (besondere züge)
-- (mehr info)
-- (bild?)
+- better ReamMe (style,screenshots,categories,...)
+
+- more animations
+- Bottomnavigationbar (train list, log "seen", ...)
+- (special trains?)
+- (more info?)
+- (picture?)
