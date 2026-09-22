@@ -7,7 +7,7 @@
 <br/>
 
 <p align="center">
-  <a href="https://github.com/bxsti-dev/Zugnummerfinder"><img src="https://img.shields.io/badge/Webversion-Starten-blue?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Webversion"></a>
+  <a href="https://bxsti-dev.github.io/Zugnummerfinder/"><img src="https://img.shields.io/badge/Webversion-Starten-blue?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Webversion"></a>
   &nbsp;&nbsp;
   <a href="https://github.com/bxsti-dev/Zugnummerfinder/releases"><img src="https://img.shields.io/badge/Android-APK_Download-green?style=for-the-badge&logo=android&logoColor=white" alt="Android APK"></a>
 </p>
@@ -15,7 +15,7 @@
 ---
 
 ## 🚀 Schnellstart
-🌐 **Web:** [Webversion öffnen](https://github.com/bxsti-dev/Zugnummerfinder)  
+🌐 **Web:** [Webversion öffnen](https://bxsti-dev.github.io/Zugnummerfinder/)  
 📱 **Android:** [APK in den Releases herunterladen](https://github.com/bxsti-dev/Zugnummerfinder/releases)
 
 <br/>
