@@ -1,6 +1,8 @@
 import 'dart:convert';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
+import 'package:url_launcher/url_launcher.dart';
 
 void main() {
   runApp(const MyApp());
@@ -112,6 +114,15 @@ class _HomeState extends State<Home> {
     return GestureDetector(
       onTap:() => FocusManager.instance.primaryFocus?.unfocus(),
       child: Scaffold(
+        bottomNavigationBar: kIsWeb ? Padding(padding: const EdgeInsets.all(8.0),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.end,
+            children: [InkWell(
+              child: Text("View on GitHub", style: TextStyle(decoration: TextDecoration.underline), textAlign: TextAlign.right),
+              onTap: () => launchUrl(Uri.https("github.com","bxsti-dev/Zugnummerfinder")),
+            )],
+          ),
+        ):null,
         appBar: AppBar(title: Text("Zugnummerfinder"), centerTitle: true),
       
         body: Center(
