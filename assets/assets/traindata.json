@@ -1,0 +1,219 @@
+{
+    "F74.0 (Prototyp)": {
+        "min": 2500,
+        "max": 2501,
+        "year_built": "1973-1975",
+        "retired": 2006,
+        "type": "Schaltwerker"
+    },
+    "F74.1 / F74.1E": {
+        "min": 2502,
+        "max": 2529,
+        "year_built": "1973-1975",
+        "retired": null,
+        "type": "Schaltwerker"
+    },
+    "F74.2 / F74.2E": {
+        "min": 2530,
+        "max": 2549,
+        "year_built": "1973-1975",
+        "retired": null,
+        "type": "Schaltwerker"
+    },
+    "F74.3 / F74.3E": {
+        "min": 2550,
+        "max": 2555,
+        "year_built": "1973-1975",
+        "retired": null,
+        "type": "Schaltwerker"
+    },
+    "F76 / F76E": {
+        "min": 2556,
+        "max": 2637,
+        "year_built": "1976-1977",
+        "retired": null,
+        "type": "Schaltwerker"
+    },
+    "F79.1": {
+        "min": 2638,
+        "max": 2671,
+        "year_built": "1979-1981",
+        "retired": 2019,
+        "type": "Schaltwerker"
+    },
+    "F79.2": {
+        "min": 2672,
+        "max": 2711,
+        "year_built": "1979-1981",
+        "retired": 2021,
+        "type": "Schaltwerker"
+    },
+    "F79.3": {
+        "min": 2712,
+        "max": 2723,
+        "year_built": "1979-1981",
+        "retired": 2004,
+        "type": "Drehstromer"
+    },
+    "F84": {
+        "min": 2724,
+        "max": 2801,
+        "year_built": "1984-1985",
+        "retired": null,
+        "type": "Drehstromer"
+    },
+    "F87": {
+        "min": 2802,
+        "max": 2843,
+        "year_built": "1987-1988",
+        "retired": null,
+        "type": "Drehstromer"
+    },
+    "F90": {
+        "min": 2844,
+        "max": 2903,
+        "year_built": "1990-1991",
+        "retired": null,
+        "type": "Drehstromer"
+    },
+    "F92": {
+        "min": 2904,
+        "max": 3013,
+        "year_built": "1992-1994",
+        "retired": null,
+        "type": "Drehstromer"
+    },
+    "H95": {
+        "min": 5001,
+        "max": 5002,
+        "year_built": "1994-1995",
+        "retired": null,
+        "type": null
+    },
+    "H97": {
+        "min": 5003,
+        "max": 5026,
+        "year_built": "1998-1999",
+        "retired": null,
+        "type": null
+    },
+    "H01": {
+        "min": 5027,
+        "max": 5046,
+        "year_built": "2000-2002",
+        "retired": null,
+        "type": null
+    },
+    "IK17": {
+        "min": 1027,
+        "max": 1037,
+        "year_built": "2016-2017",
+        "retired": null,
+        "type": null
+    },
+    "IK20": {
+        "min": 5065,
+        "max": 5078,
+        "year_built": "2020-2021",
+        "retired": null,
+        "type": null
+    },
+    "J24": {
+        "min": 7001,
+        "max": 7533,
+        "year_built": "2023",
+        "retired": null,
+        "type": null
+    },
+
+
+
+
+
+
+
+    "A3E (A364+A366)": {
+        "min": 482,
+        "max": 537,
+        "year_built": "2002-2005",
+        "retired": null,
+        "type": null
+    },
+    "A3L66": {
+        "min": 884,
+        "max": 891,
+        "year_built": "1966",
+        "retired": 1999,
+        "type": null
+    },
+    "A3L67": {
+        "min": 794,
+        "max": 883,
+        "year_built": "1967-1968",
+        "retired": 2008,
+        "type": null
+    },
+    "A3L71": {
+        "min": 656,
+        "max": 793,
+        "year_built": "1972-1973",
+        "retired": 2022,
+        "type": null
+    },
+    "A3L82": {
+        "min": 640,
+        "max": 655,
+        "year_built": "1982-1983",
+        "retired": 2018,
+        "type": null
+    },
+    "A3L92": {
+        "min": 538,
+        "max": 639,
+        "year_built": "1993-1995",
+        "retired": null,
+        "type": "Drehstromer"
+    },
+    "GI/1E": {
+        "min": 1070,
+        "max": 1094,
+        "year_built": "2005-2009",
+        "retired": null,
+        "type": null
+    },
+    "HK00": {
+        "min": 1001,
+        "max": 1004,
+        "year_built": "2001",
+        "retired": null,
+        "type": null
+    },
+    "HK06": {
+        "min": 1005,
+        "max": 1024,
+        "year_built": "2006-2007",
+        "retired": null,
+        "type": null
+    },
+    "IK15": {
+        "min": 1025,
+        "max": 1026,
+        "year_built": "2015",
+        "retired": null,
+        "type": null
+    },
+    "IK18": {
+        "min": 1038,
+        "max": 1064,
+        "year_built": "2018-2019",
+        "retired": null,
+        "type": null
+    },
+    "JK24": {
+        "min": 6001,
+        "max": 6517,
+        "year_built": "2023-2025",
+        "retired": null,
+        "type": null
+    }
+}
